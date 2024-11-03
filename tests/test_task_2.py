@@ -13,3 +13,8 @@ def test_calculate_tax():
         # assert calculate_tax( 20, -5)
         # assert calculate_tax(-45.45,-55.76)
         # assert calculate_tax(0, 0)
+
+
+def test_calculate_discount():
+    assert calculate_tax(45, 25, 0.15) == 49.5
+    assert calculate_tax(45, 25, 0) == 56.25
